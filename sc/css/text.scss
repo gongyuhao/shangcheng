@@ -1,0 +1,329 @@
+@charset "UTF-8";
+@function db($num){
+	@return $num/20;
+}
+html,body{
+    height: 100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.title{
+	width: 100%;
+	height: db(460rem);
+	position: relative;
+}
+.bg{
+	width: 100%;
+	height: db(460rem);
+	position: absolute;
+	img{
+		width: 100%;
+		height: db(460rem);
+	}
+}
+.search{
+	height: db(80rem);
+	width: 73%;
+	background: white;
+	opacity: 0.7;
+	filter:alpha(opacity=70);
+    line-height: db(80rem);
+    position: absolute;
+    top:db(60rem);
+    left:db(20rem);
+    border-radius: db(40rem);
+	.test{
+		width: 50%;
+		margin: 0 auto;
+		input{
+		width: 75%;
+		height: db(70rem);
+		border:none;
+		outline: none;
+		color: #92999e;
+		font-size: db(28rem);
+	   }
+	    b{
+		font-family: "iconfont";
+		font-size: db(40rem);
+		color: #92999e;
+	   }
+	}
+}
+.gwc{
+	height: db(80rem);
+	width: 10.6%;
+	background: white;
+	opacity: 0.7;
+	filter:alpha(opacity=70);
+	border-radius: 50%;
+	position: absolute;
+	top:db(60rem);
+	right:db(40rem);
+	font-family: "iconfont";
+	text-align: center;
+	font-size: db(50rem);
+	font-weight: 700;
+	color:red;
+	line-height: db(80rem);
+}
+ul{
+	height: db(12rem);
+	position: relative;
+	margin:db(-40rem) auto 0 auto;
+	text-align: center;
+	li{
+		display: inline-block;
+	    list-style: none;
+	    height: db(9rem);
+	    width: 1.2%;
+	    background: rgba(0,0,0,0.7);
+	    border-radius: 50%;
+	    border:db(3rem) solid white;
+	    margin-right: db(10rem);
+	}
+}
+.box{
+	width: 100%;
+	height: db(170rem);
+	margin-top: db(28rem);
+	text-align: center;
+	.son{
+		width: 25%;
+		height:  db(170rem);
+		float: left;
+		img{
+			height: db(100rem);
+			width: 55%;
+			margin-top: db(10rem)
+		}
+		.tit{
+			color: #000;
+			height: db(50rem);
+			line-height: db(50rem);
+			font-size: db(30rem);
+		}
+	}
+}
+.big{
+	background: #f5f5f5;
+	flex:1;
+	.t{
+	    width: 100%;
+	    border-top: db(10rem) solid #f5f5f5;
+    }
+    img{
+    	width: 100%
+    }
+    .text{
+    	margin-top: db(10rem);
+    	height: db(80rem);
+    	width: 100%;
+    	font-size: db(30rem);
+    	text-align: center;
+    	background: #fff;
+    	line-height: db(80rem);
+    }
+    .conent{
+    	width: 100%;
+    	height: db(320rem);
+    	margin-top: db(5rem);
+    	.xs{
+    		width: 49%;
+    		height: db(320rem);
+    		float: left;
+    	    background: #fff;
+    		.text1{
+    			font-size: db(30rem);
+    			color: #f9ce33;
+    			width: db(150rem);
+    			position: relative;
+    			top:db(46rem);
+    			left: db(20rem);
+    		}
+    		.text2{
+    			font-size: db(20rem);
+    			width: db(150rem);
+    			position: relative;
+    			top:db(60rem);
+    			left: db(20rem);
+    			color: #666;
+    		}
+    		img{
+    			float: right;
+    			width: 64%;
+    			height: db(240rem)
+    		}
+    	}
+    	.xa{
+    		width: 49.5%;
+    		height: db(158rem);
+    		margin-bottom: db(4rem);
+    		float: left;
+    	    background: #fff;
+    		margin-left: 1%;
+    		.text1{
+    			font-size: db(30rem);
+    			color: #ea5e7f;
+    			width: db(150rem);
+    			position: relative;
+    			top:db(25rem);
+    			left: db(20rem);
+    		}
+    		.text2{
+    			font-size: db(20rem);
+    			width: db(150rem);
+    			position: relative;
+    			top:db(39rem);
+    			left: db(20rem);
+    			color: #666;
+    		}
+    		img{
+    			float: right;
+    			margin-top: db(-47rem);
+    			margin-right: db(30rem);
+    			height: db(130rem);
+    			width: 35%;
+    		}
+    	}
+    	.xsa{
+    		width: 49.5%;
+    		height: db(158rem);
+    		float: left;
+    	    background: #fff;
+    		margin-left: 1%;
+    		.text1{
+    			font-size: db(30rem);
+    			color: #66c92a;
+    			width: db(150rem);
+    			position: relative;
+    			top:db(25rem);
+    			left: db(20rem);
+    		}
+    		.text2{
+    			font-size: db(20rem);
+    			width: db(150rem);
+    			position: relative;
+    			top:db(39rem);
+    			left: db(20rem);
+    			color: #666;
+    		}
+    		img{
+    			float: right;
+    			margin-top: db(-47rem);
+    			margin-right: db(30rem);
+    			height: db(130rem);
+    			width: 35%;
+    		}
+    	}
+    }
+    .main{
+    	margin-top: db(5rem);
+    	width: 100%;
+    	height: db(1100rem);
+    	margin-bottom: db(95rem);
+    	.nf{
+    		width: 49.5%;
+    		height: db(535rem);
+    		background: #fff;
+    		float: left;
+    		img{
+    			width: 100%;
+    			height: db(375rem);
+    		}
+    		.title1{
+    			font-size: db(26rem);
+    			width: 100%;
+    			height: db(53rem);
+    			margin-top: db(37rem);
+    		}
+    		.write{
+    			width: 50%;
+    			height: db(65rem);
+    			line-height: db(65rem);
+    			color: #ff3456;
+    			font-size: db(26rem);
+    			float: left;
+    		}
+    		.yuan{
+    			height: db(50rem);
+    			width: 13.7%;
+    			background: #ff3456;
+    			float: right;
+    			margin-top: db(10rem);
+    			border-radius: 50%;
+    			font-family: "iconfont";
+    			text-align: center;
+    			line-height: db(50rem);
+    			font-size: db(30rem);
+    			color: #fff;
+    		}
+    	}
+    	.nfa{
+    		width: 49.5%;
+    		height: db(535rem);
+    		background: #fff;
+    		float: left;
+    		margin-left: 1%;
+    		img{
+    			width: 100%;
+    			height: db(375rem);
+    		}
+    		.title1{
+    			font-size: db(26rem);
+    			width: 100%;
+    			height: db(53rem);
+    			margin-top: db(37rem);
+    		}
+    		.write{
+    			width: 50%;
+    			height: db(65rem);
+    			line-height: db(65rem);
+    			color: #ff3456;
+    			font-size: db(26rem);
+    			float: left;
+    		}
+    		.yuan{
+    			height: db(50rem);
+    			width: 13.7%;
+    			background: #ff3456;
+    			float: right;
+    			margin-top: db(10rem);
+    			border-radius: 50%;
+    			font-family: "iconfont";
+    			text-align: center;
+    			line-height: db(50rem);
+    			font-size: db(30rem);
+    			color: #fff;
+    		}
+    	}
+    	.nf.b{
+    		margin-top: db(5rem)
+    	}
+    	.nfa.b{
+    		margin-top: db(5rem)
+    	}
+    }
+}
+.floor{
+	width: 100%;
+	height: db(90rem);
+	position: fixed;
+	display:flex;
+	left:0;
+	bottom:0;
+	background: #fff;
+	.hov{
+		width: 25%;
+		height: db(90rem);
+		float: left;
+		text-align: center;
+		img{
+			height: db(44rem);
+			width: 25%;
+			margin-top: db(3rem)
+		}
+	}
+}
